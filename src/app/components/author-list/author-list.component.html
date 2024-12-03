@@ -1,0 +1,7 @@
+<h1>Lista de Autores</h1>
+<ul>
+  <li *ngFor="let author of authors">
+    {{ author.name }}
+    <button (click)="deleteAuthor(author.id)">Deletar</button>
+  </li>
+</ul>
